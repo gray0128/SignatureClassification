@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>签名分类</title>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/xlsx/0.16.9/xlsx.full.min.js"></script>
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+</head>
+<body class="bg-gray-100 flex justify-center items-center min-h-screen">
+    <div class="bg-white shadow-lg rounded-lg p-8 max-w-md w-full">
+        <h1 class="text-3xl font-bold text-center mb-6 text-gray-800">签名分类</h1>
+        <div class="space-y-6">
+            <div class="flex flex-col items-center">
+                <label for="fileInput" class="block mb-2 text-sm font-medium text-gray-900 dark:text-gray-300">选择文件</label>
+                <input type="file" id="fileInput" accept=".xlsx" class="block w-full text-sm text-gray-900 border border-gray-300 rounded-lg cursor-pointer bg-gray-50 focus:outline-none focus:border-blue-500">
+            </div>
+            <button onclick="processFile()" class="w-full bg-blue-600 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded focus:outline-none focus:shadow-outline">
+                处理文件
+            </button>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
